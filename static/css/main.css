@@ -1,48 +1,48 @@
 /* Polices */
 @font-face {
     font-family: "Beaufort";
-    src: local("Beaufort"), url("/static/fonts/Beaufort-OTF/BeaufortforLOL-Regular.otf") format("opentype");
+    src: local("Beaufort"), url("static/fonts/Beaufort-OTF/BeaufortforLOL-Regular.otf") format("opentype");
     font-style: normal;
 }
 
 @font-face {
     font-family: "Beaufort";
-    src: local("Beaufort"), url("/static/fonts/Beaufort-OTF/BeaufortforLOL-Bold.otf") format("opentype");
+    src: local("Beaufort"), url("static/fonts/Beaufort-OTF/BeaufortforLOL-Bold.otf") format("opentype");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Beaufort";
-    src: local("Beaufort"), url("/static/fonts/Beaufort-OTF/BeaufortforLOL-Heavy.otf") format("opentype");
+    src: local("Beaufort"), url("static/fonts/Beaufort-OTF/BeaufortforLOL-Heavy.otf") format("opentype");
     font-weight: heavy;
 }
 
 @font-face {
     font-family: "Beaufort";
-    src: local("Beaufort"), url("/static/fonts/Beaufort-OTF/BeaufortforLOL-Medium.otf") format("opentype");
+    src: local("Beaufort"), url("static/fonts/Beaufort-OTF/BeaufortforLOL-Medium.otf") format("opentype");
     font-weight: medium;
 }
 
 @font-face {
     font-family: "Beaufort";
-    src: local("Beaufort"), url("/static/fonts/Beaufort-OTF/BeaufortforLOL-Italic.otf") format("opentype");
+    src: local("Beaufort"), url("static/fonts/Beaufort-OTF/BeaufortforLOL-Italic.otf") format("opentype");
     font-style: italic;
 }
 
 @font-face {
     font-family: "Spiegel";
-    src: local("Spiegel"), url("/static/fonts/Spiegel-OTF/Spiegel-Regular.otf") format("opentype");
+    src: local("Spiegel"), url("static/fonts/Spiegel-OTF/Spiegel-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Spiegel";
-    src: local("Spiegel"), url("/static/fonts/Spiegel-OTF/Spiegel-Bold.otf") format("opentype");
+    src: local("Spiegel"), url("static/fonts/Spiegel-OTF/Spiegel-Bold.otf") format("opentype");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Spiegel";
-    src: local("Spiegel"), url("/static/fonts/Spiegel-OTF/Spiegel-RegularItalic.otf") format("opentype");
+    src: local("Spiegel"), url("static/fonts/Spiegel-OTF/Spiegel-RegularItalic.otf") format("opentype");
     font-style: italic;
 }
 
