@@ -1,12 +1,8 @@
-body{
-    background-image: url("static/images/welcome.png"), radial-gradient(rgba(1,10,19,0.5),rgba(1,10,19,1));
-}
-
 .page-welcome{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("/static/images/welcome.png");
+    background-image: url("static/images/welcome.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
