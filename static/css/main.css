@@ -1,0 +1,247 @@
+/* Polices */
+@font-face {
+    font-family: "Beaufort";
+    src: local("Beaufort"), url("/static/fonts/Beaufort-OTF/BeaufortforLOL-Regular.otf") format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Beaufort";
+    src: local("Beaufort"), url("/static/fonts/Beaufort-OTF/BeaufortforLOL-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Beaufort";
+    src: local("Beaufort"), url("/static/fonts/Beaufort-OTF/BeaufortforLOL-Heavy.otf") format("opentype");
+    font-weight: heavy;
+}
+
+@font-face {
+    font-family: "Beaufort";
+    src: local("Beaufort"), url("/static/fonts/Beaufort-OTF/BeaufortforLOL-Medium.otf") format("opentype");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Beaufort";
+    src: local("Beaufort"), url("/static/fonts/Beaufort-OTF/BeaufortforLOL-Italic.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spiegel";
+    src: local("Spiegel"), url("/static/fonts/Spiegel-OTF/Spiegel-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Spiegel";
+    src: local("Spiegel"), url("/static/fonts/Spiegel-OTF/Spiegel-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Spiegel";
+    src: local("Spiegel"), url("/static/fonts/Spiegel-OTF/Spiegel-RegularItalic.otf") format("opentype");
+    font-style: italic;
+}
+
+h1, h2, h3, h4{
+    font-family: "Beaufort";
+}
+/* Fin Polices */
+
+
+/* Style de page */
+body{
+    color: #F0E6D2;
+    background-color: #010A13;
+    font-family: "Spiegel";
+    font-size: 18px;
+}
+
+.footer{
+    margin-top: 10%;
+    border-top: 1px solid #C89B3C;
+    background-color: #1E282D;
+}
+
+.footer-head{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.footer-body{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3vh;
+}
+.footer-component{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-component a{
+    color: #F0E6D2;
+}
+.footer-component a:hover{
+    color: #C89B3C;
+    transition: linear 0.1s;
+}
+
+.page-title{
+    font-size: 28px;
+    display: block;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    text-align: center;
+    
+}
+
+.separator-line{
+    border: none;
+    border: 1px solid #C89B3C;
+    border-radius: 50%;
+    width: 50%;
+}
+
+p{
+    font-family: "Spiegel";
+}
+
+.img-logo-c{
+    width: 80px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Fin Style de page */
+
+/* Style de paragraphe */
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    font-family: "Spiegel";
+    font-size: 18px;
+    width: 66%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.paragraph-title{
+    font-size: 24px;
+}
+.paragraph-content{
+    font-family: "Spiegel";
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.paragraph-content-left{
+    display: flex;
+    flex-direction: column;
+}
+.paragraph-content-right{
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+}
+.paragraph-content-right img{
+    width: 100%;
+}
+.paragraph-content-left img{
+    width: 100%;
+}
+.paragraph-text{
+    font-family: "Spiegel";
+    font-size: 18px;
+}
+.paragraph-link{
+    color: #F0E6D2;
+    text-decoration: underline;
+}
+.paragraph-link:hover{
+    color: #0AC8B9;
+    transition: linear 0.1s;
+}
+
+.paragraph-separator-line{
+    border: none;
+    border: 1px solid #F0E6D2;
+    border-radius: 50%;
+    width: 33%;
+    margin-top: 16px;
+}
+/* Fin Style de paragraphe */
+
+
+
+/* Barre de navigation */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #010A13;
+    border-bottom: 1px solid #C89B3C;
+    width: 100%;
+}
+
+.nav-logo{
+    margin-top: 0.25%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #F0E6D2;
+    height: 64px;
+}
+
+.nav-components{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.nav-link{
+    cursor: pointer;
+    border: none;
+    display: block;
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+    padding-left: 6%;
+    padding-right: 6%;
+
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+
+    border-left: 1px solid #1E282D;
+    border-right: 1px solid #1E282D;
+    border-radius: 4px;
+
+    background-color: #010A13;
+    display: block;
+    color: #F0E6D2;
+    text-decoration: none;
+    text-align: center;
+
+    font-family: "Beaufort";
+    font-size: 18px;
+}
+
+.nav-link:hover{
+    background-color: #1E282D;
+    transition: ease-in 0.2s;
+}
+
+.version{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Fin Barre de navigation */

@@ -1,0 +1,58 @@
+body{
+    background-image: url("static/images/welcome.png"), radial-gradient(rgba(1,10,19,0.5),rgba(1,10,19,1));
+}
+
+.page-welcome{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/static/images/welcome.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 768px;
+    width: 100%;
+}
+
+.page-title1{
+    font-size: 28px;
+    display: block;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    text-align: center;
+
+    background-color: rgba(9,20,40,0.7);
+    position: relative;
+    top: 50%;
+    width: 75%;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #C89B3C;
+}
+
+.page-subtitle{
+    font-size: 32px;
+    color: #F0E6D2;
+}
+
+.super-btn{
+    font-size: 18px;
+    margin-top: 1%;
+    border: none;
+    background-color: #0AC8B9;
+    padding: 1.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 5px;
+}
+
+.super-btn:hover{
+    cursor: pointer;
+    background-color: #CDFAFA;
+    transition: linear 0.2s;
+}
