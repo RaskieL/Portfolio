@@ -114,6 +114,12 @@ p{
     font-family: "Spiegel";
 }
 
+a{
+    text-decoration: none;
+    color: #010A13;
+    font-family: "Spiegel";
+}
+
 .img-logo-c{
     width: 80px;
     height: 60px;
@@ -233,6 +239,7 @@ p{
 
     font-family: "Beaufort";
     font-size: 18px;
+    transition: linear 0.2s;
 }
 
 .nav-link:hover{
@@ -245,3 +252,172 @@ p{
     margin-right: auto;
 }
 /* Fin Barre de navigation */
+
+/* Style Index */
+.page-welcome{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/welcome.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 768px;
+    width: 100%;
+}
+
+.page-title1{
+    font-size: 28px;
+    display: block;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    text-align: center;
+
+    background-color: rgba(9,20,40,0.7);
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    width: 75%;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #C89B3C;
+}
+
+.page-subtitle{
+    font-size: 32px;
+    color: #F0E6D2;
+}
+
+.super-btn{
+    font-size: 18px;
+    margin-top: 1%;
+    border: none;
+    background-color: #0AC8B9;
+    padding: 1.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 5px;
+    transition: linear 0.2s;
+}
+
+.super-btn:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 8px #F5A9B8;
+    box-shadow: 0px 0px 10px #F5A9B8;
+    background-color: #CDFAFA;
+    transition: linear 0.2s;
+}
+/* Fin Style Index */
+
+/* Style Portfolio */
+
+.portfolio-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.portfolio-row{
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: 6vh;
+    gap: 5%;
+}
+
+.portfolio-card{
+    border: 1px solid #CDFAFA;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #CDFAFA;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    transition: linear 0.1s;
+}
+
+.portfolio-card:hover{
+    box-shadow: 0px 0px 20px #F5A9B8;
+    transition: linear 0.25s;
+}
+
+.portfolio-image{
+    height: 360px;
+}
+
+.portfolio-title{
+    margin-top: 2vh;
+}
+
+.portfolio-title h3{
+    position: relative;
+    bottom: 10px;
+}
+
+.portfolio-description{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.portfolio-action{
+    margin-top: 5%;
+}
+
+.portfolio-action a{
+    color: #010A13;
+    text-decoration: none;
+}
+
+.portfolio-action .super-btn{
+    padding: 4%;
+}
+
+.portfolio-shuffle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.portfolio-sbtn1{
+    border: 1px solid #1E282D;
+    box-shadow: 0px 0px 20px #1E282D;
+    border-radius: 15px;
+    background-color: #010A13;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.portfolio-sbtn1:hover{
+    background-color: #1E282D;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #1E282D;
+    transition: linear 0.2s;
+}
+
+.portfolio-sbtn2{
+    border: 0px solid #1E282D;
+    box-shadow: 0px 0px 0px #1E282D;
+    border-radius: 15px;
+    background-color: #010A13;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.portfolio-sbtn2:hover{
+    background-color: #1E282D;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #1E282D;
+    transition: linear 0.2s;
+}
+/* Fin Style Portfolio */
