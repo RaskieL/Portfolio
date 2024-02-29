@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="icon" type="image/png" href="static/images/logo.png" />
+    <script src="script.js"></script>
     <title>Portfolio - Maïken D.</title>
 </head>
 
-<body>
+<body onload="loadPortfolio()">
     <form class="navbar">
         <img class="nav-logo" src="static/images/logo.png" alt="logo">
         <div class="nav-components">
@@ -26,15 +27,16 @@
         <h1>Portfolio</h1>
         <hr class="separator-line" noshade>
         <div class="portfolio-shuffle">
-            <button class="portfolio-sbtn1" type="submit"><h2 class="page-subtitle">Portfolio Universitaire</h2></button>
-            <button class="portfolio-sbtn2" type="submit"><h2 class="page-subtitle">Portfolio Personnel</h2></button>
+            <button class="portfolio-sbtn1" id="portfolio-sbtn1" onclick="switchPortfolioToUniv()"><h2 class="page-subtitle">Portfolio Universitaire</h2></button>
+            <button class="portfolio-sbtn2" id="portfolio-sbtn2" onclick="switchPortfolioToPerso()"><h2 class="page-subtitle">Portfolio Personnel</h2></button>
         </div>
     </div>
 
-    <div class="portfolio-container">
+    <div class="portfolio-container" id="portfolioUniv">
         <h2 class="page-subtitle">Premier Semestre</h2>
         <hr class="paragraph-separator-line" noshade style="margin-bottom: 5vh; margin-top: 0%;">
         <div class="portfolio-row">
+
             <div class="portfolio-card">
                 <div class="portfolio-image">
                     <img class="portfolio-image" src="static/images/sae1-56.png" alt="portfolio-illustration">
@@ -48,7 +50,7 @@
                     <p class="paragraph-text">Site vitrine sur Arkane Studios, et rédaction d'un rapport économique sur ladite entreprise.</p>
                 </div>
                 <div class="portfolio-action">
-                    <a class="super-btn" href="#">En savoir plus</a>
+                    <a class="super-btn" href="Portfolio/Univ/2023-2024/SAE1-56.html">En savoir plus</a>
                 </div>
             </div>
 
@@ -65,7 +67,7 @@
                     <p class="paragraph-text">Gestion de base de données avec PyMysql. Installation d'un poste de travail Linux.</p>
                 </div>
                 <div class="portfolio-action">
-                    <a class="super-btn" href="#">En savoir plus</a>
+                    <a class="super-btn" href="Portfolio/Univ/2023-2024/SAE1-34.html">En savoir plus</a>
                 </div>
             </div>
 
@@ -82,7 +84,7 @@
                     <p class="paragraph-text">Application Java transformant du texte en signal sonore. Comparaison d'algorithmes.</p>
                 </div>
                 <div class="portfolio-action">
-                    <a class="super-btn" href="#">En savoir plus</a>
+                    <a class="super-btn" href="Portfolio/Univ/2023-2024/SAE1-12.html">En savoir plus</a>
                 </div>
             </div>
 
@@ -105,7 +107,7 @@
                     <p class="paragraph-text">Projet en cours. WIP.</p>
                 </div>
                 <div class="portfolio-action">
-                    <a class="super-btn" href="#">En savoir plus</a>
+                    <a class="super-btn" href="Portfolio/Univ/2023-2024/SAE2-345.html">En savoir plus</a>
                 </div>
             </div>
 
@@ -122,10 +124,14 @@
                     <p class="paragraph-text">Projet non commencé.</p>
                 </div>
                 <div class="portfolio-action">
-                    <a class="super-btn" href="#">En savoir plus</a>
+                    <a class="super-btn" href="Portfolio/Univ/2023-2024/SAE2-126.html">En savoir plus</a>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="portfolio-container" id="portfolioPerso">
+        <h2 class="page-subtitle">À venir prochainement</h2>
     </div>
 
     <div class="footer">
