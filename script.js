@@ -30,3 +30,13 @@ function switchPortfolioToUniv(){
     buttonUniv.style.border = "1px solid #1E282D"
     buttonUniv.style.boxShadow = "0px 0px 20px #1E282D"
 }
+
+function toggleNavBurger(){
+    let navmenu = document.getElementById("navmenu");
+
+    if(navmenu.style.display == "none"){
+        navmenu.style.display = "flex";
+    }else if(navmenu.style.display == "flex"){
+        navmenu.style.display = "none";
+    }
+}

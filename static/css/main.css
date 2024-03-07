@@ -103,6 +103,10 @@ body{
     
 }
 
+img{
+    aspect-ratio: 1/1;
+}
+
 .separator-line{
     border: none;
     border: 1px solid #C89B3C;
@@ -250,6 +254,20 @@ a{
 .version{
     margin-left: auto;
     margin-right: auto;
+}
+
+#burger{
+    display: none;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+    padding-right: 40%;
+    padding-left: 40%;
+}
+
+#burger img{
+    width: 50%;
 }
 /* Fin Barre de navigation */
 
@@ -425,3 +443,96 @@ a{
     transition: linear 0.2s;
 }
 /* Fin Style Portfolio */
+
+
+/* Responsive */
+@media (max-width:1280px){
+    .portfolio-row{
+        flex-direction: column;
+        width: 80%;
+    }
+    .portfolio-card{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-bottom: 5%;
+    }
+    .portfolio-description{
+        margin-left: auto;
+        margin-right: auto;
+        width: 66%;
+    }
+    #socialnetworks{
+        width: 64px;
+        height: 64px;
+    }
+    .super-btn{
+        padding: 5%;
+    }
+    .version{
+        display: none;
+    }
+    .nav-logo{
+        width: 10vw;
+        height: 10vw;
+    }
+    .nav-components{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-row{
+        flex-direction: column;
+        width: 90%;
+    }
+    .portfolio-card{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .nav-components{
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        display: none;
+    }
+    #burger{
+        display: block;
+    }
+    .page-title1{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #index-images{
+        display: none;
+    }
+    .nav-logo{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 468px) {
+    .nav-components{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+        display: none;
+    }
+    .nav-link{
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+    .navbar{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
