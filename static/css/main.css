@@ -262,8 +262,8 @@ a{
     margin-left: auto;
     margin-right: auto;
     padding-top: 1%;
-    padding-right: 40%;
-    padding-left: 40%;
+    padding-right: 29.1%;
+    padding-left: 29.1%;
 }
 
 #burger img{
@@ -516,6 +516,15 @@ a{
     .navbar{
         display: flex;
         flex-direction: column;
+    }
+    .paragraph{
+        width: 80%;
+    }
+    .paragraph-separator-line{
+        width: 80%;
+    }
+    .nav-link{
+        border-radius: 0px;
     }
 }
 

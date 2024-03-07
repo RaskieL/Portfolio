@@ -32,11 +32,14 @@ function switchPortfolioToUniv(){
 }
 
 function toggleNavBurger(){
+    event.preventDefault();
     let navmenu = document.getElementById("navmenu");
+    let burger = document.getElementById("burger");
 
-    if(navmenu.style.display == "none"){
+    burger.style.borderBottom = "3px solid #1E282D"
+    if(window.getComputedStyle(navmenu).display === "none"){
         navmenu.style.display = "flex";
-    }else if(navmenu.style.display == "flex"){
+    }else{
         navmenu.style.display = "none";
     }
 }
