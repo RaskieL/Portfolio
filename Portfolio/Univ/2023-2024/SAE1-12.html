@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="../../../static/css/index.css">
     <link rel="icon" type="image/png" href="../../../static/images/logo.png" />
     <script src="../../../script.js"></script>
-    <title>SAE1 1-2 - Maïken D.</title>
+    <title>DosSend/DosRead - Comparaison d'algorithme - Maïken D.</title>
 </head>
 
 <body>
     <form class="navbar">
-        <a href="../../../index.html" style="margin-left: 1.5vw;"><img class="nav-logo" src="../../../static/images/logo.png" alt="logo"></a>
+        <a href="../../../index.html" style="margin-left: 1.5vw;"><img class="nav-logo"
+                src="../../../static/images/logo.png" alt="logo"></a>
         <button class="nav-link" id="burger" onclick="toggleNavBurger()"><img src="../../../static/images/menu.png"></button>
         <div class="nav-components" id="navmenu">
             <button class="nav-link" type="submit" formaction="../../../index.html">
@@ -33,7 +34,100 @@
         <p class="version">Version 1.0</p>
     </form>
 
+    <div class="page-title">
+        <h1>DosSend/DosRead - Comparaison d'algorithme</h1>
+        <hr class="separator-line" noshade>
+        <div class="portfolio-shuffle" style="margin-left: auto; margin-right: auto; width: 66%;">
+            
+        </div>
+    </div>
 
+    <div class="paragraph">
+        <div class="paragraph-content" style="margin-top: 0%;">
+            <div class="paragraph-content-left">
+                <h3 class="paragraph-title">Présentation</h3>
+                <p class="paragraph-text">Pour ce projet, nous avons dû former des binômes de travail. Notre objectif était de répondre à un besoin client (fictif) spécifique
+                    en développant deux programmes Java avec un cahier des charges.<br><br> Le premier programme appelé DosSend avait pour but de convertir une entrée textuelle en donnée binaire, qu'on traite et transforme en signal sonore.
+                    <br><br>Le second programme appelé DosRead avait pour but de prendre en entrée un signal sonore et de détecter le début du signal sonore émis par DosSend pour ensuite comprendre son signal complet et retranscrire le-dit signal en texte.
+                    Nous avions donc des normes à respecter, notamment un format .wav, une fréquence de 44,1 kHz, un canal mono et 16bits par échantillon.<br><br>
+                    En plus de cela, nous avions projet lié au précédent. Dans un deuxième temps nous avions à comparer deux algorithmes différents de filtre passe-bas (présent dans le DosRead), 
+                    et fournir un rapport scientifique détaillé contenant la comparaison et les données de nos tests.</p>
+            </div>
+        </div>
+        <hr class="paragraph-separator-line" noshade">
+        <div class="paragraph-content">
+            <div class="paragraph-content-left">
+                <h3 class="paragraph-title">Le DosSend</h3>
+                <p class="paragraph-text">J'ai été fournie, avec mon binôme, une structure de code par notre professeur, contenant les variables et constantes à utiliser, ainsi que des méthodes vides que nous devions compléter et utiliser.
+                    <br><br>Premièrement il a fallu pouvoir lire une entrée texte (fournie par un fichier .txt), et la convertir en donnée binaire, ce qui fait la base de notre signal sonore.
+                    <br><br>Ensuite, j'ai dû avec mon coéquipier développer une méthode pour écrire en Little Endian dans un fichier des données afin de pouvoir écrire le header du fichier wav qui sera créé.
+                    Le header d'un fichier wav est ce qui permet de savoir que c'est un fichier wav et contient diverses informations, tels que la taille du fichier, le nombre de canal, la fréquence et plus encore.
+                    <br><br>Puis il a fallu normaliser les données selon les normes que nous avions à respecter, et moduler les données pour que chaque symbole ait le bon nombre d'échantillon dans le signal sonore à la bonne fréquence et la bonne hauteur.
+                    Et finalement j'ai écrit un affichage graphique pour notre programme avec la bibliothèque StdDraw montrant le signal sonore sur un axe temporel.
+                    
+                </p>
+            </div>
+            <div class="paragraph-content-right">
+                <img src="../../../static/images/sae1-12.png" alt="image" style="width: 119.83%">
+            </div>
+        </div>
+        <div class="paragraph-content">
+            <div class="paragraph-content-left">
+                <img src="../../../static/images/sae1-12.png" alt="image">
+            </div>
+            <div class="paragraph-content-right">
+                <h3 class="paragraph-title">Le DosRead</h3>
+                <p class="paragraph-text">Pareil que pour le DosRead, j'ai été fournie avec mon binôme une structure de code par notre professeur, contenant le même type de contenu que pour la partie précédente.
+                    <br><br>La toute première étape était d'écrire une méthode pour lire le header du fichier wav d'entrée, afin de déterminer la taille du fichier, le type d'échantillonnage etc. C'est ce qui permettra au programme de précisément faire ses calculs.
+                    <br><br>Ensuite j'ai dû avec mon binôme écrire une méthode pour convertir les données du fichier wav en un tableau de réels.
+                    Données qui sont ensuite rectifiées en transformant les valeurs négatives en positives, et filtrées avec un filtre passe-bas.
+                    <br><br>Puis j'ai écrit une fonction pour ré-échantilloner les données avec un palier pour séparer les valeurs entre 0 et 1. En soit on retransforme nos données en binaire.
+                    <br><br>Pour finir, il a fallu écrire des méthodes qui déterminent le début de la séquence de début (qui permet au programme de savoir quand le message commence), et décode les bits en caractères. Nous avons donc à la fin le message décodé sous forme de texte.
+                </p>
+            </div>
+        </div>
+        <hr class="paragraph-separator-line" noshade">
+        <div class="paragraph-content">
+            <div class="paragraph-content-left">
+                <h3 class="paragraph-title">Les tests</h3>
+                <p class="paragraph-text">Pour tester notre programme nous avons préparé une batterie de test avec des textes différents à chaque fois. Nous avons testé le programme avec de simples phrases, des séries de chiffres, des caractères spéciaux et plus encore. Et nous avons obtenu une précision de 99.99% ! Nous avons eu une seule erreur sur un caractère spécial un peu farfelu et qui est jamais utilisé.
+                    <br><br>Nous avons fait cela plus de nombreuses fois. En plus, nous avons tester les performances de notre programme en lui fournissant des textes de plusieurs dizaines de milliers de caractères. Pour ces tests, le DosSend avait du mal, et mettait longtemps à créer le fichier .wav, mais il y arrivait finalement. Nous avons atteint une limite d'environ 25 000 caractères avant d'atteindre une erreur de limitation mémoire.
+                    <br><br>J'ai aussi testé le DosRead en lui fournissant le signal sonore du DosSend que j'ai joué sur haut parleur que j'ai enregistré ensuite avec un microphone avec du bruit parasite autour. Le DosRead a eu aucun problème pour comprendre le signale sonore du DosSend même dans ces conditions.
+                </p>
+            </div>
+            <div class="paragraph-content-right">
+                <img src="../../../static/images/sae1-12.png" alt="image" style="width: 119.83%">
+            </div>
+        </div>
+        <div class="paragraph-content">
+            <div class="paragraph-content-left">
+                <img src="../../../static/images/sae1-12.png" alt="image">
+            </div>
+            <div class="paragraph-content-right">
+                <h3 class="paragraph-title">La comparaison d'algorithme</h3>
+                <p class="paragraph-text">Pour la comparaison algorithmique, j'ai dû avec mon binôme réalisé un autre algorithme en plus de celui que nous avions déjà fait pour un filtre passe bas. Pour cela nous avons effectué des recherches sur internet afin de gagner du temps et comparer notre algorithme à ce qu'on peut trouver.
+                    <br><br>Nous avons créer des méthodes calculant le temps d'exécution des filtres passe-bas afin de comparer leur performance. Nous avons utilisé notre ancienne batterie de test pour tester les méthodes, que nous avons exécuté 500 fois par test pour avoir des données fiables.
+                    <br><br>J'ai réuni toutes les données en millisecondes dans un fichier texte, que nous avons triées et analysées avec des graphiques. Et puis nous avons rédigé notre rapport scientifique, qui devait être en anglais, comparant les deux algorithmes, en incorporant bien sûr nos données et graphiques.
+
+                </p>
+            </div>
+        </div>
+        <div class="paragraph-content">
+            <div class="paragraph-content-left">
+                <h3 class="paragraph-title">Bilan</h3>
+                <p class="paragraph-text">Ce projet m'a appris des méthodes de travails intéressantes au niveau de la répartition des tâches en binôme. J'ai progressé en algorithme et j'ai acquis une plus grande compréhension du langage Java.
+                    <br><br>J'ai appris à réaliser des tests pour un programme et faire de l'analyse de données afin de réaliser une comparaison scientifique des perfomances et de la complexité des-dits programmes.
+                    <br><br>J'ai aussi été sensibilisée à la performance d'un algorithme, notamment en réalisant les tests, et en essayant d'éviter du code inutile dans mes méthodes.<br><br>
+
+                    Pour ce projet j'ai eu la note de 17/20 en ce qui concerne le DosSend et le DosRead, et la note de 12/20 pour la comparaison algorithmique.</p>
+            </div>
+        </div>
+        <hr class="paragraph-separator-line" noshade>
+        <div class="portfolio-shuffle">
+            <a class="super-btn" target="_blank" href="https://github.com/MaikenDANGELO/SAE-0102-DOS">Dépôt Github</a>
+            <a class="super-btn" href="../../../static/files/#" download="Rapport_Arkane.pdf">Télécharger le rapport</a>
+        </div>
+    </div>
 
     <div class="footer">
         <div class="footer-head">

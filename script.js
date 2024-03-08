@@ -3,6 +3,98 @@ function loadPortfolio(){
     document.getElementById("portfolioUniv").style.display = "flex";
 }
 
+function switchToBackendSkills(){
+    let backendbtn = document.getElementById("skillBackendBtn");
+    let frontendbtn = document.getElementById("skillFrontendBtn");
+    let databasebtn = document.getElementById("skillDatabaseBtn");
+    let otherbtn = document.getElementById("skillOtherBtn");
+
+    document.getElementById("backend").style.display = "flex";
+    document.getElementById("backend2").style.display = "flex";
+    document.getElementById("frontend").style.display = "none";
+    document.getElementById("database").style.display = "none";
+    document.getElementById("skill-other").style.display = "none";
+
+    backendbtn.style.border = "1px solid #1E282D"
+    frontendbtn.style.border = "0px solid #1E282D"
+    databasebtn.style.border = "0px solid #1E282D"
+    otherbtn.style.border = "0px solid #1E282D"
+
+    backendbtn.style.boxShadow = "0px 0px 20px #1E282D"
+    frontendbtn.style.boxShadow = "0px 0px 0px #1E282D"
+    databasebtn.style.boxShadow = "0px 0px 0px #1E282D"
+    otherbtn.style.boxShadow = "0px 0px 0px #1E282D"
+}
+
+function switchToFrontendSkills(){
+    let backendbtn = document.getElementById("skillBackendBtn");
+    let frontendbtn = document.getElementById("skillFrontendBtn");
+    let databasebtn = document.getElementById("skillDatabaseBtn");
+    let otherbtn = document.getElementById("skillOtherBtn");
+
+    document.getElementById("backend").style.display = "none";
+    document.getElementById("backend2").style.display = "none";
+    document.getElementById("frontend").style.display = "flex";
+    document.getElementById("database").style.display = "none";
+    document.getElementById("skill-other").style.display = "none";
+
+    backendbtn.style.border = "0px solid #1E282D"
+    frontendbtn.style.border = "1px solid #1E282D"
+    databasebtn.style.border = "0px solid #1E282D"
+    otherbtn.style.border = "0px solid #1E282D"
+
+    backendbtn.style.boxShadow = "0px 0px 0px #1E282D"
+    frontendbtn.style.boxShadow = "0px 0px 20px #1E282D"
+    databasebtn.style.boxShadow = "0px 0px 0px #1E282D"
+    otherbtn.style.boxShadow = "0px 0px 0px #1E282D"
+}
+
+function switchToDatabaseSkills(){
+    let backendbtn = document.getElementById("skillBackendBtn");
+    let frontendbtn = document.getElementById("skillFrontendBtn");
+    let databasebtn = document.getElementById("skillDatabaseBtn");
+    let otherbtn = document.getElementById("skillOtherBtn");
+
+    document.getElementById("backend").style.display = "none";
+    document.getElementById("backend2").style.display = "none";
+    document.getElementById("frontend").style.display = "none";
+    document.getElementById("database").style.display = "flex";
+    document.getElementById("skill-other").style.display = "none";
+
+    backendbtn.style.border = "0px solid #1E282D"
+    frontendbtn.style.border = "0px solid #1E282D"
+    databasebtn.style.border = "1px solid #1E282D"
+    otherbtn.style.border = "0px solid #1E282D"
+
+    backendbtn.style.boxShadow = "0px 0px 0px #1E282D"
+    frontendbtn.style.boxShadow = "0px 0px 0px #1E282D"
+    databasebtn.style.boxShadow = "0px 0px 20px #1E282D"
+    otherbtn.style.boxShadow = "0px 0px 0px #1E282D"
+}
+
+function switchToOtherSkills(){
+    let backendbtn = document.getElementById("skillBackendBtn");
+    let frontendbtn = document.getElementById("skillFrontendBtn");
+    let databasebtn = document.getElementById("skillDatabaseBtn");
+    let otherbtn = document.getElementById("skillOtherBtn");
+
+    document.getElementById("backend").style.display = "none";
+    document.getElementById("backend2").style.display = "none";
+    document.getElementById("frontend").style.display = "none";
+    document.getElementById("database").style.display = "none";
+    document.getElementById("skill-other").style.display = "flex";
+
+    backendbtn.style.border = "0px solid #1E282D"
+    frontendbtn.style.border = "0px solid #1E282D"
+    databasebtn.style.border = "0px solid #1E282D"
+    otherbtn.style.border = "1px solid #1E282D"
+
+    backendbtn.style.boxShadow = "0px 0px 0px #1E282D"
+    frontendbtn.style.boxShadow = "0px 0px 0px #1E282D"
+    databasebtn.style.boxShadow = "0px 0px 0px #1E282D"
+    otherbtn.style.boxShadow = "0px 0px 20px #1E282D"
+}
+
 function switchPortfolioToPerso(){
     document.getElementById("portfolioPerso").style.display = "flex";
     document.getElementById("portfolioUniv").style.display = "none";

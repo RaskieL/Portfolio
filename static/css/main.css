@@ -418,6 +418,8 @@ a{
     background-color: #010A13;
     padding-left: 1%;
     padding-right: 1%;
+    color: #F0E6D2;
+    font-size: 16px;
 }
 
 .portfolio-sbtn1:hover{
@@ -444,6 +446,68 @@ a{
 }
 /* Fin Style Portfolio */
 
+/* Style Compétences */
+.skills{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+}
+
+.skills-row{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    display: flex;
+    gap: 3vw;
+}
+
+.skill-card{
+    width: 256px;
+    padding-top: 5%;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.skill-card h2{
+    position: relative;
+    bottom: 15px;
+}
+
+.skill-card-placeholder{
+    width: 128px;
+    padding-top: 5%;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.skill-card:hover{
+    box-shadow: 0px 0px 10px #1E282D;
+}
+
+.skill-card img{
+    width: 64px;
+    height: 64px;
+}
+
+.progress-bar{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 15px;
+    background-color: #1E282D;
+}
+
+.progressBar{
+    width: 0%;
+    height: 20px;
+    border-radius: 15px;
+    color: #010A13;
+    background-color: #0AC8B9;
+    text-align: center;
+}
 
 /* Responsive */
 @media (max-width:1280px){
