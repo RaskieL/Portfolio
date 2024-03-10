@@ -491,6 +491,27 @@ a{
     height: 64px;
 }
 
+.skills-legend{
+    display: flex;
+}
+.skills-legend-row{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 5%;
+    gap: 5%;
+}
+.skills-legend-color{
+    width: 16px;
+    height: 16px;
+}
+
+.skills-legend-text{
+    position: relative;
+    bottom: 3px;
+    margin-left: 10px;
+}
+
 .progress-bar{
     margin-top: 10px;
     margin-left: auto;
@@ -506,7 +527,7 @@ a{
     border-radius: 15px;
     color: #010A13;
     background-color: #0AC8B9;
-    text-align: center;
+    text-align: right;
 }
 
 /* Responsive */
