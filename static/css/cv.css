@@ -1,0 +1,136 @@
+/* Polices */
+@font-face {
+    font-family: "Beaufort";
+    src: local("Beaufort"), url("../fonts/Beaufort-OTF/BeaufortforLOL-Regular.otf") format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Beaufort";
+    src: local("Beaufort"), url("../fonts/Beaufort-OTF/BeaufortforLOL-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Beaufort";
+    src: local("Beaufort"), url("../fonts/Beaufort-OTF/BeaufortforLOL-Heavy.otf") format("opentype");
+    font-weight: heavy;
+}
+
+@font-face {
+    font-family: "Beaufort";
+    src: local("Beaufort"), url("../fonts/Beaufort-OTF/BeaufortforLOL-Medium.otf") format("opentype");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Beaufort";
+    src: local("Beaufort"), url("../fonts/Beaufort-OTF/BeaufortforLOL-Italic.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Spiegel";
+    src: local("Spiegel"), url("../fonts/Spiegel-OTF/Spiegel-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Spiegel";
+    src: local("Spiegel"), url("../fonts/Spiegel-OTF/Spiegel-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Spiegel";
+    src: local("Spiegel"), url("../fonts/Spiegel-OTF/Spiegel-RegularItalic.otf") format("opentype");
+    font-style: italic;
+}
+
+.cv{
+    width: 210mm;
+    height: 297mm;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.cv a{
+    color: #F0E6D2;
+}
+
+.cv a:hover{
+    color: #0AC8B9;
+}
+
+.cv-body{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.cv-body-main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background: #F0E6D2;
+    color: #1E2328;
+}
+
+.cv-body-sidebar{
+    width: 320px;
+    height: 100%;
+    background-color: #1E2328;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.cv-photo{
+    margin-right: auto;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    width: 168px;
+    height: 168px;
+    border-radius: 100px;
+    border: 1px solid #F0E6D2;
+}
+
+.cv-photo img{
+    width: 168px;
+    height: 168px;
+    border-radius: 100px;
+}
+
+.cv-title{
+    letter-spacing: 3px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.cv-title h1{
+    position: relative;
+    bottom: 15px;
+    font-size: 38px;
+}
+
+.cv-title hr{
+    position: relative;
+    bottom: 25px;
+}
+
+.cv-title h2{
+    position: relative;
+    bottom: 30px;
+    font-size: 24px;
+}
+
+.cv-title h3{
+    position: relative;
+    letter-spacing: 4px;
+    bottom: 35px;
+}
