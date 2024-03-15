@@ -66,7 +66,7 @@ body{
     height: 297mm;
     display: flex;
     flex-direction: column;
-    font-size: 13px;
+    font-size: 12.5px;
     color: #fdf9f1;
     letter-spacing: 1px;
 }
@@ -110,9 +110,6 @@ body{
     margin-left: auto;
     width: 168px;
     height: 168px;
-    border-radius: 100px;
-    border: 1px solid #fdf9f1;
-    box-shadow: 0px 0px 3px #F5A9B8;
 }
 
 .cv-photo img{
@@ -166,7 +163,7 @@ h1{
     margin-top: 5%;
     text-align: justify;
     position: relative;
-    font-size: 13px;
+    font-size: 12.5px;
 }
 
 .cv-color-band{
