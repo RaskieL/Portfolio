@@ -66,7 +66,7 @@ body{
     height: 297mm;
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 13px;
     color: #fdf9f1;
     letter-spacing: 1px;
 }
@@ -90,7 +90,7 @@ body{
     display: flex;
     width: 100%;
     flex-direction: column;
-    background: #fdf9f1;
+    background: #fffcf7;
     color: #1E2328;
 }
 
@@ -143,13 +143,17 @@ body{
 .cv-title h2{
     position: relative;
     bottom: 30px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .cv-title h3{
     position: relative;
     letter-spacing: 4px;
     bottom: 35px;
+}
+
+h1{
+    font-size: 24px;
 }
 
 .cv-sidebar-element{
@@ -162,7 +166,7 @@ body{
     margin-top: 5%;
     text-align: justify;
     position: relative;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .cv-color-band{
