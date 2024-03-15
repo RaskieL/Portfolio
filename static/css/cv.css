@@ -47,14 +47,23 @@
 }
 
 @page{
-    width: 210mm;
-    height: 297mm;
+    size: 210mm 297mm;
+}
+
+@media print{
+    body{
+        width: 21cm;
+        height: 29.7cm;
+    }
+}
+
+body{
+    size: 210mm 297mm;
 }
 
 .cv{
     width: 210mm;
     height: 297mm;
-    margin: auto;
     display: flex;
     flex-direction: column;
     font-size: 14px;
